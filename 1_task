@@ -9,8 +9,8 @@ int main() {
     
     const int SIZE = 256;
     int count[SIZE] = {0};
-    
-    // Подсчитываем символы
+
+//считаем кол-во символов
     for(char ch : text) {
         count[ch]++;
     }
