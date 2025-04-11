@@ -7,15 +7,14 @@ int main() {
     cout << "Введите текст: ";
     getline(cin, text);
     
-    const int SIZE = 256; // размер ASCII таблицы
-    int count[SIZE] = {0}; // массив для подсчета символов
+    const int SIZE = 256;
+    int count[SIZE] = {0};
     
     // Подсчитываем символы
     for(char ch : text) {
         count[ch]++;
     }
     
-    // Выводим результат
     for(int i = 0; i < SIZE; i++) {
         if(count[i] > 0) {
             cout << char(i) << " - " << count[i] << endl;
