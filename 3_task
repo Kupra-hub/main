@@ -17,6 +17,7 @@ int main() {
     int count[SIZE] = { 0 }; 
 
     for (char& ch : text) {
+//принимаются только буквы и цифры
         if (isalnum(ch)) {
             if (choice == 'no' || choice == 'NO') {
                 ch = tolower(ch);
