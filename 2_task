@@ -10,6 +10,7 @@ int main() {
     getline(cin, text);
 
     char choice;
+//Учитываение регистра
     cout << "Учитывать регистр? (Yes/No): ";
     cin >> choice;
 
